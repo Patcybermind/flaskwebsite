@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Find the highest numbered output file
+last_output=$(ls logs/output*.log 2> /dev/null | sort -t . -k 2 -g | tail -n 1)
+
+# Extract the number from the file name
+last_number=$(echo $last_output | grep -o -E '[0-9]+')
+
+# If no output file was found, start numbering from 1
+if [ -z "$last_number" ]
+then
+    last_number=0
+fi
+
+# Increment the number by 1
+next_number=$((last_number + 1))
+
+# Run the Python script and redirect its output to the new output file
+nohup python3 flasktest.py > "logs/output${next_number}.log" &
