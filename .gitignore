@@ -2,3 +2,5 @@ env/
 logs
 __pycache__
 requirements.txt
+notes.txt
+ev
