@@ -1,0 +1,3 @@
+http://me.patcybermind.tech:5040 {
+    reverse_proxy localhost:5020
+}

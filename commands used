@@ -1,0 +1,10 @@
+runs after closing:
+gunicorn -b 0.0.0.0:5020 app:app &
+doesn't:
+gunicorn -b 0.0.0.0:5020 app:app
+caddy start 
+caddy stop
+pgrep gunicorn
+pkill gunicorn
+source .venv/bin/activate
+remember to use the .venv in the flask website directory

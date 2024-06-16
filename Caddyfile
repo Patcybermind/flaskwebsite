@@ -1,3 +1,0 @@
-http://37.27.51.34:5040 {
-    reverse_proxy localhost:5020
-}
