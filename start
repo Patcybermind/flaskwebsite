@@ -17,4 +17,5 @@ next_number=$((last_number + 1))
 
 # Run the Python script and redirect its output to the new output file
 export FLASK_APP=app
+export FLASK_ENV=development
 nohup flask run --port=5020 > "logs/output${next_number}.log" &

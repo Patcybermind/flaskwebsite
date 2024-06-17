@@ -1,12 +1,4 @@
 #!/bin/bash
 
-# Find the process ID of flasktest.py
-pid=$(ps aux | grep 'flasktest.py' | grep -v grep | awk '{print $2}')
-
-# If the process is found, kill it
-if [ ! -z "$pid" ]
-then
-    echo "Killing flasktest.py with PID: $pid"
-    kill $pid
-else
-    echo "No flasktest.py process found"
+pkill flask
+pkill flask
