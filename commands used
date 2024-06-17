@@ -6,5 +6,6 @@ caddy start
 caddy stop
 pgrep gunicorn
 pkill gunicorn
+flask run --port=5020 but its better to use the site script
 source .venv/bin/activate
 remember to use the .venv in the flask website directory
