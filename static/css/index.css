@@ -1,0 +1,24 @@
+:root {
+    --main-bg-color: #555555;
+    --main-text-color: white;
+  }
+  body {
+    background-color: var(--main-bg-color);
+  }
+  
+  .main-text {
+    color: var(--main-text-color);
+    font-size: 2vw; /* Adjust this value as needed */
+    font-family: Arial, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .main-text {
+      font-size: 16px; /* Minimum font size */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .main-text {
+      font-size: 24px; /* Maximum font size */
+    }
+  }
