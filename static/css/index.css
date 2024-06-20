@@ -1,6 +1,8 @@
 :root {
-    --main-bg-color: #555555;
+    --main-bg-color: #a3a3a3;
     --main-text-color: white;
+    --titles-font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;;
+    --main-text-font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;;
   }
   body {
     background-color: var(--main-bg-color);
@@ -9,7 +11,7 @@
   .main-text {
     color: var(--main-text-color);
     font-size: 2vw; /* Adjust this value as needed */
-    font-family: Arial, sans-serif;
+    font-family: var(--main-text-font-family);
   }
   @media (max-width: 600px) {
     .main-text {
@@ -21,4 +23,10 @@
     .main-text {
       font-size: 24px; /* Maximum font size */
     }
+  }
+
+
+  .titles {
+    color:black;
+    font-family: var(--titles-font-family);
   }
