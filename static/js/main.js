@@ -46,7 +46,7 @@ function moveCamera() {
 
     console.log(t);
 
-    const start = -2500;
+    const start = -2000;
     const end = -4000;
     
     if ( t <= start && t >= end) {
