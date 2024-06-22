@@ -1,6 +1,5 @@
 // Importing THREE from npm
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
-//import Decimal from 'https://cdn.jsdelivr.net/npm/decimal.js-light@2.5.1/decimal.min.js' // decimal.js
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000);
