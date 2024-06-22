@@ -1,6 +1,6 @@
 // Importing THREE from npm
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
-import * as d from 'https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.4.0/decimal.js' // decimal.js
+//import Decimal from 'https://cdn.jsdelivr.net/npm/decimal.js-light@2.5.1/decimal.min.js' // decimal.js
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -9,10 +9,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 // SETUP
-const startRotationInDegrees = 90;
-
-camera.position.z = 0;
-camera.rotation.x = degreesToRadians(startRotationInDegrees);
+setCameraRotationInDegrees(90);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 // HELPER
@@ -27,7 +24,11 @@ function radiansToDegrees(radians) {
 function degreesToRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
-
+function setCameraRotationInDegrees(degrees) {
+    const radians = degreesToRadians(degrees);
+    camera.rotation.x = radians;
+    console.log('degrees:', degrees, 'radians:', radians);
+}
 
 function addStar() {
     const star = new THREE.Mesh((new THREE.SphereGeometry(0.25, 24, 24)), (new THREE.MeshBasicMaterial({color: 0xffffff})));
@@ -47,19 +48,12 @@ function moveCamera() {
 
     const start = -2500;
     const end = -4000;
-    if ( t >= start ) {
-        // go from camera.rotation.x = Math.PI / 2; to 0
-        let rateOfRotationInDegrees = startRotationInDegrees / 1500; //end - start
-        console.log('rate of rotation:', rateOfRotationInDegrees)
-        let step = t - start;
-        console.log('step:', step)
-
-        camera.rotation.x = degreesToRadians(rateOfRotationInDegrees * step);
-
-        const rotationXDegrees = radiansToDegrees(camera.rotation.x);
-
-        console.log("Camera rotation in degrees - X:", rotationXDegrees);
-
+    
+    if ( t <= start && t >= end) {
+        console.log('now');
+        const step = Math.abs(t) - Math.abs(start);
+        const difference = Math.abs(end) - Math.abs(start);
+        setCameraRotationInDegrees(90 - step*(90/difference));
     }
     
 
