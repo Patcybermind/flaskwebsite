@@ -1,4 +1,6 @@
 #!/bin/bash
 
-pkill flask
-pkill flask
+echo $(pkill flask)
+echo $(pkill flask)
+echo $(pkill flask)
+

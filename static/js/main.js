@@ -11,10 +11,11 @@ const renderer = new THREE.WebGLRenderer({
 setCameraRotationInDegrees(90);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
 // HELPER
 // Parameters: size of the grid, number of divisions, color of grid lines, color of the central lines
 const gridHelper = new THREE.GridHelper(10, 10, 0x0000ff, 0x808080);
-scene.add(gridHelper)
+//scene.add(gridHelper)
 
 
 function radiansToDegrees(radians) {

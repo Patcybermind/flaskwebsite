@@ -79,3 +79,55 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+  .mars{
+        /* Specific styles or resets for sections with class 'mars' */
+        background-color: transparent;  /* Example: overriding background color */
+        padding: 0;                     /* Example: resetting padding */
+        margin-bottom: 0;
+        
+        
+        
+        
+  }
+
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+footer {
+  background-color: transparent; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the text */
+  padding: 20px 0; /* Padding above and below the text */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.marsdiv {
+  position: relative;
+  top: 800px;
+  width: 100vw;  
+  height: auto; 
+}
+
+.marsimage {
+  width: 60%;  
+  height: auto; 
+  
+}
+
+.marslinks {
+  position: absolute;  /* Position absolutely within .marsdiv */
+  top: 65%;            /* Center vertically */
+  left: 50%;           /* Center horizontally */
+  transform: translate(-50%, -50%) rotate(-15deg); /* Offset the position by half of its own width and height to center it perfectly */
+  /* Additional styles for visibility or aesthetics */
+  color: white;        /* Example: setting text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Example: semi-transparent background */
+  padding: 10px;       /* Example: padding around the text */
+  border-radius: 5px;  /* Example: rounded corners */
+
+
+}

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Find the highest numbered output file
-last_output=$(ls logs/output*.log 2> /dev/null | sort -t . -k 2 -g | tail -n 1)
+last_output=$(ls logs/log* 2> /dev/null | sort -t . -k 2 -n | tail -n 1)
 
 # Extract the number from the file name
 last_number=$(echo $last_output | grep -o -E '[0-9]+')
@@ -18,4 +18,4 @@ next_number=$((last_number + 1))
 # Run the Python script and redirect its output to the new output file
 export FLASK_APP=app
 export FLASK_ENV=development
-nohup flask run --port=5020 > "logs/output${next_number}.log" &
+nohup flask run --port=5020 > "logs/log${next_number}" &
