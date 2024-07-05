@@ -1,0 +1,29 @@
+:root {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 80px;
+    margin: 0;
+
+}
+h1, h2, h3, blockquote {
+    font-family: elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header-content {
+   
+    height: 100%;
+    background-color: black;
+    color:white;
+
+    
+}
+

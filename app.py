@@ -21,9 +21,9 @@ def page_not_found(e):
 def index():
     return render_template('index.html')
 
-@app.route('/projectsindex')
+@app.route('/projects')
 def projects():
-    return render_template('projectsindex.html')
+    return render_template('projects.html')
 
 @app.route('/projects/<path:subpath>')
 def handle_project(subpath):
