@@ -32,11 +32,11 @@ function setCameraRotationInDegrees(degrees) {
 
 function addStar() {
     const star = new THREE.Mesh((new THREE.SphereGeometry(0.25, 24, 24)), (new THREE.MeshBasicMaterial({color: 0xffffff})));
-    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100)); // how spread they are
+    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(200)); // how spread they are
     star.position.set(x, y, z);
     scene.add(star);
 }
-Array(200).fill().forEach(addStar); // you can change the amount of stars
+Array(600).fill().forEach(addStar); // you can change the amount of stars
 
 
 

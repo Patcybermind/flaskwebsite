@@ -1,0 +1,26 @@
+/nix/store/306znyj77fv49kwnkpxmb0j2znqpa8bj-bash-5.2p26/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+Usage: flask run [OPTIONS]
+Try 'flask run --help' for help.
+
+Error: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/nix/store/pw25nkfnjzxfmjlynggnikiwzj9n0ww5-python3.12-flask-3.0.3/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/home/patcybermind/flaskwebsite/app.py", line 4, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+
+/nix/store/306znyj77fv49kwnkpxmb0j2znqpa8bj-bash-5.2p26/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+Usage: flask run [OPTIONS]
+Try 'flask run --help' for help.
+
+Error: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/nix/store/pw25nkfnjzxfmjlynggnikiwzj9n0ww5-python3.12-flask-3.0.3/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/home/patcybermind/flaskwebsite/app.py", line 4, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+
