@@ -6,9 +6,10 @@
 html, body {
     margin: 0;
     padding: 0;
+    background: #2D2D30;
 }
 header {
-    height: 80px;
+    height: 90px;
     margin: 0;
 
 }
