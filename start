@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source .venv/bin/activate
 # Find the highest numbered output file
 last_output=$(ls logs/log* 2> /dev/null | sort -t . -k 2 -n | tail -n 1)
 
@@ -18,4 +18,5 @@ next_number=$((last_number + 1))
 # Run the Python script and redirect its output to the new output file
 export FLASK_APP=app
 export FLASK_ENV=development
+echo starting
 nohup flask run --port=5020 > "logs/log${next_number}" &
