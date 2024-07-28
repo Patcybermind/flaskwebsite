@@ -1,0 +1,38 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hello Friend NG</title>
+        <link>localhost/posts/</link>
+        <description>Recent content in Posts on Hello Friend NG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 28 Jul 2024 13:19:45 +0000</lastBuildDate>
+        <atom:link href="localhost/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My First Post</title>
+            <link>localhost/posts/my-first-post/</link>
+            <pubDate>Sun, 28 Jul 2024 13:19:45 +0000</pubDate>
+            
+            <guid>localhost/posts/my-first-post/</guid>
+            <description>This is my first blog! This is my first blog test to see if everything works right and to test the setup
+Here is a list of programming languages:
+Python JavaScript Java C++ Ruby Feel free to explore and learn more about these languages!
+url is currently : http://localhost:1313/posts/my-first-post/</description>
+            <content type="html"><![CDATA[<h1 id="this-is-my-first-blog">This is my first blog!</h1>
+<p>This is my first blog test to see if everything works right and to test the setup</p>
+<p>Here is a list of programming languages:</p>
+<ul>
+<li>Python</li>
+<li>JavaScript</li>
+<li>Java</li>
+<li>C++</li>
+<li>Ruby</li>
+</ul>
+<p>Feel free to explore and learn more about these languages!</p>
+<p>url is currently : http://localhost:1313/posts/my-first-post/</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

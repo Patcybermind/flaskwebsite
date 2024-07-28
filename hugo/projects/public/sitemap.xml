@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>localhost/</loc>
+    <lastmod>2024-07-28T13:19:45+00:00</lastmod>
+  </url><url>
+    <loc>localhost/posts/my-first-post/</loc>
+    <lastmod>2024-07-28T13:19:45+00:00</lastmod>
+  </url><url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2024-07-28T13:19:45+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/</loc>
+    <lastmod>2024-07-28T13:19:45+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/test/</loc>
+    <lastmod>2024-07-28T13:19:45+00:00</lastmod>
+  </url><url>
+    <loc>localhost/blog/</loc>
+  </url><url>
+    <loc>localhost/series/</loc>
+  </url>
+</urlset>

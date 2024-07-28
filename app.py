@@ -23,24 +23,24 @@ def index():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    return render_template('/hugo/projects/public/index.html')
 
-@app.route('/projects/<path:subpath>')
-def handle_project(subpath):
-    # subpath contains the part of the URL after projects/
-    subpathmd = subpath
-    if not subpath.endswith('.md'): subpathmd += '.md'
-
-    app.logger.debug(subpath)
-
-    file_path = os.path.join('projects/', subpathmd)
-
-    if os.path.exists(file_path):
-        compile_file.compile_file(subpathmd)
-        app.logger.debug(subpathmd)
-        return render_template(f'projects/{subpath}.html')
-    else:
-        return render_template('didntwork.html')
+#@app.route('/projects/<path:subpath>')
+#def handle_project(subpath):
+#    # subpath contains the part of the URL after projects/
+#    subpathmd = subpath
+#    if not subpath.endswith('.md'): subpathmd += '.md'
+#
+#    app.logger.debug(subpath)
+#
+#    file_path = os.path.join('projects/', subpathmd)
+#
+#    if os.path.exists(file_path):
+#        compile_file.compile_file(subpathmd)
+#        app.logger.debug(subpathmd)
+#        return render_template(f'projects/{subpath}.html')
+#    else:
+#        return render_template('didntwork.html')
         
     
 
