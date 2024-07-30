@@ -7,6 +7,7 @@ import os
 import logging
 import compile_file
 
+
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.logger.setLevel(logging.DEBUG)
